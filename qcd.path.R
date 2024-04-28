@@ -1,3 +1,5 @@
+# Construct regularization path (use warm-start) of regularized QR for grid of lambda's 
+
 qcd.path <- function(x, y, tau, funname = c("LASSO", "SCAD", "MCP"), a, weights = NULL, 
                      lambda = NULL, nlambda = 30, standardize = TRUE, 
                      thresh = 1e-6, maxit = 100000, verbose = TRUE) {
