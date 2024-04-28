@@ -1,3 +1,5 @@
+# Use coordinate descent to solve regularized QR for a single value of lambda - LASSO
+
 lasso.fit = function(x, y, tau, lambda, weights = weights, warm = NULL,
                      thresh = thresh, maxit = maxit, verbose = FALSE) { 
   
