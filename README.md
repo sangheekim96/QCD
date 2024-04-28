@@ -5,6 +5,7 @@
 - We need to transform lasso.fit() / scad.fit() / mcp.fit() into Fortran
 
   *** Note : when running simulation, it takes longer when I use the above structure than when I use the original warm-start
+  
   *** Nudge is not implemented in the function
 
 1. qcd.path() : input grid of lambda's, construct regularization path, use warm-start (deafult)
