@@ -1,15 +1,3 @@
----
-title: "Vignette"
-output: github_document
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
 ## Installing all packages needed
 
 You can download the `QCD` package by devtools::install_github function. `QCD` package contains  functions that solve regularized weighted quantile regression problem through coordinate descent.
