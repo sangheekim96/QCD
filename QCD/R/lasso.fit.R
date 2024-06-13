@@ -65,8 +65,8 @@ lasso.fit <- function(x, y, tau, lambda, weights = NULL, warm = NULL,
       neww = w[or]
 
       Si_prime = neww * abs(newx) * newtaus
-      wx = neww * abs(newx) / n
-      S_prime = -sum(Si_prime) / n
+      wx = neww * abs(newx)
+      S_prime = -sum(Si_prime)
       indx0 = max(which(newr == 0)) # find the index when r=0, if multiple, select the last one
 
       base = cumsum(c(S_prime, wx))
