@@ -66,8 +66,8 @@ mcp.fit <- function(x, y, tau, lambda, a, weights = NULL, warm = NULL,
       neww = w[or]
 
       Si_prime = neww * abs(newx) * newtaus
-      wx = neww * abs(newx) / n
-      S_prime = -sum(Si_prime) / n
+      wx = neww * abs(newx)
+      S_prime = -sum(Si_prime)
       indx0 = max(which(newr == 0)) # find r=0
       indx_al1 = max(which(newr == -a*lambda)) # find r=-a*lambda
       indx_al2 = max(which(newr == a*lambda)) # find r=a*lambda
