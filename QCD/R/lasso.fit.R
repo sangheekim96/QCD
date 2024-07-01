@@ -67,14 +67,23 @@ lasso.fit <- function(x, y, tau, lambda, weights = NULL, warm = NULL,
       Si_prime = neww * abs(newx) * newtaus
       wx = neww * abs(newx)
       S_prime = -sum(Si_prime)
-      indx0 = max(which(newr == 0)) # find the index when r=0, if multiple, select the last one
+      indx0s = which(newr == 0)
+      indx0 = max(indx0s) # find the index when r=0, if multiple, select the last one
+      
+      # KKT condition
+      if ( abs(S_prime + sum(wx[1:(min(indx0s)-1)])) <= lambda ) {
+        betahat[l,j] = 0
+        beta[j] = 0
+      }
 
-      base = cumsum(c(S_prime, wx))
-      boost = c(rep(-lambda,indx0), rep(lambda, length(base)-indx0))
-      gradient = base + boost
-      indx = min(which(gradient >= 0))
-      betahat[l,j] = newr[indx-1]
-      beta[j]=betahat[l,j]
+      else {
+        base = cumsum(c(S_prime, wx))
+        boost = c(rep(-lambda,indx0), rep(lambda, length(base)-indx0))
+        gradient = base + boost
+        indx = min(which(gradient >= 0)) 
+        betahat[l,j] = newr[indx-1] 
+        beta[j] = betahat[l,j]
+      }
     }
 
     cur_norm = norm(betahat[l,], type="2")
