@@ -85,7 +85,7 @@ qcd.path <- function(x, y, tau, funname = c("LASSO", "SCAD", "MCP"), a,
   fit = NULL
   #set.seed(9)
   for (k in 1:nlam) {
-    cur_lambda = ulam[k]
+    cur_lambda = ulam[k]/n
     cat("Fitting lambda index", k, ":", round(log2(cur_lambda), 2), fill = TRUE) # print which lambda we are at
 
     betahat = matrix(rep(NA, p*maxit), ncol=p)
