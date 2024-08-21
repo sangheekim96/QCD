@@ -13,11 +13,11 @@
 #' @examples
 #' set.seed(1)
 #' data = generate.data(n = 150, p = 150, signal = 1)
-generate.data <- function(n, p, signal = 1) {
+generate.data <- function(n, p, signal = 1, tau = 0.5) {
   indx = c(6, 12, 15, 20)
   true_beta = rep(0, p)
   true_beta[indx] = signal
-  true_beta[1] = 0.7*qnorm(0.3, mean=0, sd=1)
+  true_beta[1] = 0.7*qnorm(tau, mean=0, sd=1)
   Sigma = 0.5^abs(outer(1:p,1:p,'-'))
   X = rmvnorm(n, mean=rep(0,p), sigma=Sigma)
   epsilon = rnorm(n)
