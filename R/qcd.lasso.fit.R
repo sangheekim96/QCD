@@ -45,7 +45,7 @@ qcd.lasso.fit <- function(x, y, tau,
   nobs <- nrow(x)
   nvars <- ncol(x)
 
-  if (is.null(weights))  weights <- c(rep(1,p))
+  if (is.null(weights))  weights <- c(rep(1, nvars))
   else weights = weights
 
   if (is.null(warm))  beta <- c(rep(0, nvars)) # initialize betas
