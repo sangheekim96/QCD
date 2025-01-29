@@ -1,0 +1,17 @@
+Package: QCD
+Title: QCD : Pathwise Coordinate Descent for High dimensional Penalized Quantile Regression
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "Anonymous@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Contains functions that solve penalized quantile regression problem through coordinate descent. The penalties could be LASSO, SCAD, and MCP. One can also run a pathwise coordinate descent through function that uses warm-start.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Imports: mvtnorm, utils, stats
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
