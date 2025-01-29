@@ -1,4 +1,4 @@
-QCD : Coordinate Descent for weighted Quantile Regression
+QCD : Pathwise Coordinate Descent for High dimensional Penalized Quantile Regression
 ================
 
 ## Installing QCD package
