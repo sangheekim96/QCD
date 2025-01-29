@@ -1,34 +1,29 @@
 QCD : Pathwise Coordinate Descent for High dimensional Penalized Quantile Regression
 ================
 
-## Installing QCD package
+# QCD
 
-``` r
-install.packages("devtools")
-library(devtools)
+We provide a QCD algorithm that solves penalized quantile regression problem through exact pathwise coordinate descent. The penalties considered are LASSO, SCAD, and MCP. Note that QCD algorithms for SCAD and MCP are experimental.
 
-# check if this works
-install_github("sangheekim96/QCD/QCD")
+## References
 
-# if it does not, we need to create a token due to 'private' repository
-usethis::use_git_config(user.name = "someone", user.email = "someone@email.com")
-usethis::create_github_token() # once the token is created, copy the Personal Access Token
-credentials::set_github_pat() # run this one time and paste PAT
-install_github("sangheekim96/QCD/QCD") # then try this
+<div id="refs" class="references">
 
-library(QCD)
-```
+<div id="ref-qicd">
 
-## Description of `QCD` package
+Peng Bo and Lan Wang. 2015. 
+“An iterative coordinate descent algorithm for high-dimensional nonconvex penalized quantile regression.” *Journal of Computational and Graphical Statistics* 24.3 (2015): 676-694. 
+<https://doi.org/10.1080/10618600.2014.913516>.
 
-The `QCD` package consists of 7 functions.
+</div>
 
-- generate.data
-- lasso.fit
-- scad.fit
-- mcp.fit
-- qcd.fit
-- qcd.path
-- rmse
+<div id="refs" class="references">
 
-Each function has a help page!
+<div id="ref-glmnet">
+
+Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. 2010.
+“Regularization Paths for Generalized Linear Models via Coordinate
+Descent.” *Journal of Statistical Software, Articles* 33 (1): 1–22.
+<https://doi.org/10.18637/jss.v033.i01>.
+
+</div>
