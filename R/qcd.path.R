@@ -117,6 +117,7 @@ qcd.path <- function(x, y, tau,
 
   for (k in 1:nlam) {
     cur_lambda <- ulam[k]
+    print(cur_lambda)
 
     if (funname == "LASSO") {
       fit <- qcd.lasso.fit(x, y, tau,
