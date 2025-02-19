@@ -11,6 +11,14 @@ We provide a QCD algorithm that solves penalized quantile regression problem thr
 
 <div id="ref-qicd">
 
+Sanghee Kim and Sumanta Basu. 2025. 
+“A Pathwise Coordinate Descent Algorithm for LASSO Penalized Quantile Regression.” *arXiv preprint arXiv:2502.12363*. 
+<https://doi.org/10.48550/arXiv.2502.12363>.
+
+<div id="refs" class="references">
+
+<div id="ref-qicd">
+
 Peng Bo and Lan Wang. 2015. 
 “An iterative coordinate descent algorithm for high-dimensional nonconvex penalized quantile regression.” *Journal of Computational and Graphical Statistics* 24.3 (2015): 676-694. 
 <https://doi.org/10.1080/10618600.2014.913516>.
