@@ -1,8 +1,6 @@
 ---
 title: "An Introducion to QCD"
-author: 
-  - Sanghee Kim
-  - Sumanta Basu
+author: Anonymous Authors
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   pdf_document:
