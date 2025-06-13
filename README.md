@@ -3,7 +3,7 @@ QCD : Pathwise Coordinate Descent for High dimensional Penalized Quantile Regres
 
 # QCD
 
-We provide a QCD algorithm that solves penalized quantile regression problem through exact pathwise coordinate descent. The penalties considered are LASSO, SCAD, and MCP. Note that QCD algorithms for SCAD and MCP are experimental. Details may be found in Kim and Basu ([2025](#ref-qcd)).Please email Sanghee Kim <sk2689@cornell.edu> if any bugs/errors have been discovered.
+We provide a QCD algorithm that solves penalized quantile regression problem through exact pathwise coordinate descent. The penalties considered are LASSO, SCAD, and MCP. Note that QCD algorithms for SCAD and MCP are experimental. Details may be found in Kim and Basu ([2025](#ref-qcd)) and in the vignette. Please email Sanghee Kim <sk2689@cornell.edu> if any bugs/errors have been discovered.
 
 ## References
 
