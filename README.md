@@ -14,7 +14,8 @@ This file describes basic usage of functions related to $\ell_1$ penalized quant
   \arg \min_{\beta \in \mathbb{R}^p} \sum_{i=1}^n \rho_\tau \left(y_i - x_i^\top \beta \right)
   + \lambda \sum_{j=1}^p \left| \beta_j \right|, \quad
   $$
-</p> where &rho;<sub>&tau;</sub>(u) := u (&tau; - 𝐈(u < 0)) is the check loss function, and &lambda; is a penalty parameter to be chosen in a data-driven fashion. &lambda; could be a grid of values covering the entire range of possible solutions.
+</p> 
+where &rho;<sub>&tau;</sub>(u) := u (&tau; - 𝐈(u < 0)) is the check loss function, and &lambda; is a penalty parameter to be chosen in a data-driven fashion. &lambda; could be a grid of values covering the entire range of possible solutions.
 
 
 ## Installation
