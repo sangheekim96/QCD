@@ -1,4 +1,4 @@
-QCD : Pathwise Coordinate Descent for High dimensional Penalized Quantile Regression
+QCD : A Pathwise Coordinate Descent Algorithm for LASSO Penalized Quantile Regression
 ================
 
 ## Introduction
